@@ -134,12 +134,12 @@ print('Welcome to tic tac toe!')
 print('You\'ll be x. The computer goes first.\n')
 
 while True: # until someone wins
-    if currentPlayer == 'computer':
-        print('Your turn.\n')
-        userGo()
-    else:
+    if currentPlayer == 'user':
         print('Computer\'s turn.')
         aiGo()
+    else:
+        print('Your turn.\n')
+        userGo()
 
     printBoard()
     if gameIsWon():
